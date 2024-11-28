@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Weather application</title>
+</head>
+<style>
+    h1{
+        color: rgb(105, 63, 11);
+        text-decoration: underline;
+        margin: auto;
+        padding-bottom: 1.5em;
+        font-size: large;
+        margin-inline-start: 5em;
+    }
+    h2{
+        font-size: larger;
+        margin-inline-start: 1.5em; 
+    }
+
+      button{
+      background-color: purple;
+      color:white;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        font-size: large;
+        border-radius: 13px;
+        border-width: 0px;
+        width: 98px;
+    }
+    body{
+        
+       
+        width:35rem ;
+        margin: auto;
+        margin-top: 8em;
+        font-size: x-large;
+        text-align: justify;
+        padding: 0;
+        margin-bottom: 0;
+        background-color: white;
+        
+        
+    }
+    form{
+        background-color: gray;
+        padding-top: 1.5em;
+        font-size: large;
+        border: 2px solid gray;
+        border-radius: 20px;
+      
+    }
+    table{
+        color: purple;
+        margin-inline-start: 2em;
+    }
+    p{
+       margin-inline-start: 1.5em;
+    }
+    footer{
+        margin: 0;
+        text-align: center;
+        padding-bottom: 0.5em;
+    }
+    a{
+        color: purple;
+    }
+    .container{
+        display: flex;
+        align-items: center;
+    }
+    .currenttemperature{
+        display: flex;
+        align-items: center;
+        margin-left: 11.9em;
+        font-size: xx-large;
+        font-weight: bolder;
+        margin-right: 0.5em;
+    }
+
+</style>
+<body>
+    <form id="search-form">
+   <div class="weatherapp">
+   
+        <h1>Welcome to our Weather application</h1>
+       
+            
+            <input type="search" placeholder="Enter city name" required class="search-input" id="search-input" style="width: 370px; padding: 10px; font-size: 13px; border: 1px solid #ccc; border-radius: 6px; margin-inline-start: 1.5em;"/>
+            <button>SEARCH</button>
+        
+    
+    
+        
+            <div class="container">
+                <h2 class="Current-city" id="current-city">Paris</h2>
+                <div class="currenttemperature">
+                    <span class="current-temperature-icon">&#9729;</span>
+                    <span class="current-temperature-value" id="current-temperature">12</span>
+                  <sup>  <span class="current-temperature-unit" >℃</span> </sup>
+                </div>
+            </div>
+                <p class="current-details">
+                    <span id="current-date"></span>Tuesday 14.40, scattered clouds<br/>
+                    Humidity:<span style="color: purple;">66</span> wind Speed:<strong>4.3</strong>
+                </p>
+
+                <table>
+                    <tr>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thur</th>
+                        <th>fri</th>
+                        <th>Sat</th>
+                        <th>Sun</th>
+                    </tr>
+                    <tr>
+                        <td>&#x1F326;</td>
+                        <td>&#x1F326;</td>
+                        <td>&#x1F326;</td>
+                        <td>&#x1F326;</td>
+                        <td>&#x1F326;</td>
+                        <td>&#x1F326;</td>
+                        <td>&#x1F326;</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>15° 19°</td>
+                        <td>15° 19°</td>
+                        <td>15° 19°</td>
+                        <td>15° 19°</td>
+                        <td>15° 19°</td>
+                        <td>15° 19°</td>
+                        <td>15° 19°</td>
+
+                                            </tr>
+                </table>
+                
+            
+        </div>
+    
+    <footer>
+        <p>
+ coded by
+<a href="https://github.com/account" target="_blank">Lewis  Njenga</a> and is on
+<a href="" target="_blank"> Github</a> 
+and hosted by
+<a href="" target="_blank">Netlify,</a>
+<br>The design was done using
+<a href="" target="_blank">Figma</a>
+
+        </p>
+    </footer>
+   </div> 
+</form>
+</body>
+</html>
